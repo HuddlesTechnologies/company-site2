@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Huddles Technologies</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="HuddlesTechnologies is your premier destination for cutting-edge web, software, and app development solutions. From responsive website design to feature-rich mobile applications, we specialize in crafting digital experiences that empower businesses to thrive in the digital age. Explore our comprehensive range of services and products designed to propel your online presence and drive success."
+    />
+    
+    <meta
+      name="keywords"
+      content="Huddles Technologies Ltd, Huddles Technologies Limited, HuddlesTechnologies, Huddles Technologies, HuddlesTech, technology solutions, software development, innovative technology, tech company, IT services, software company"
+    />
+    <meta
+      name="author"
+      content="Oviawe Efosa Iruosa - Founder of Huddles Technologies Limited"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="referrer" content="always" />
+    <meta name="theme-color" content="#0052cc" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Huddles Technologies" />
+    <meta
+      property="og:description"
+      content="Huddles Technologies is a leading provider of innovative solutions in the tech industry. Explore our services and products designed to transform businesses."
+    />
+    <meta
+      property="og:image"
+      content="https://www.huddlestechnologies.online/images/og-image.svg"
+    />
+    <meta property="og:url" content="https://www.huddlestechnologies.online" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Huddles Technologies" />
+    <meta
+      name="twitter:description"
+      content="Huddles Technologies is a leading provider of innovative solutions in the tech industry. Explore our services and products designed to transform businesses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.huddlestechnologies.online/images/twitter-image.svg"
+    />
+    <!-- Structured Data Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Huddles Technologies Limited",
+        "alternateName": "Huddles Technologies"
+        "url": "https://www.huddlestechnologies.online",
+        "logo": "https://www.huddlestechnologies.online/images/logo.webp",
+        "description": "Huddles Technologies is a leading provider of innovative solutions in the tech industry.",
+        "founder": {
+          "@type": "Person",
+          "name": "Oviawe Efosa Iruosa"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nigeria"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+2348013940242",
+          "contactType": "Customer Service",
+          "areaServed": "NG",
+          "availableLanguage": "English"
+        },
+        "sameAs": [
+          "https://x.com/huddlestech?s=21",
+          "https://www.facebook.com/HuddlesTechnologies",
+          "https://www.linkedin.com/company/HuddlesTechnologies"
+        ]
+      }
+    </script>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="vendors/aos/css/aos.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- box css -->
+    <style>
+      .features-overview {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .feature-item {
+        flex: 1 1 300px;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .feature-item:hover,
+      .feature-item.active {
+        background-color: #f5f5f5;
+      }
+
+      .feature-item.active {
+        border-color: #4caf50;
+      }
+
+      .feature-item {
+        transition:
+          background-color 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .feature-item.active {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-item:active {
+        transform: translateY(2px);
+      }
+
+      .feature-item img {
+        transition: transform 0.2s ease;
+      }
+
+      .feature-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .feature-item:hover::before {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logos/prime.webp" />
+    <style>
+      #back-to-top {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #037a8e;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      #back-to-top.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <!-- Smartsupp Live Chat script -->
+  <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = "4b1c319e4ec131598d2878d6bb352740252421fa";
+    window.smartsupp ||
+      (function (d) {
+        var s,
+          c,
+          o = (smartsupp = function () {
+            o._.push(arguments);
+          });
+        o._ = [];
+        s = d.getElementsByTagName("script")[0];
+        c = d.createElement("script");
+        c.type = "text/javascript";
+        c.charset = "utf-8";
+        c.async = true;
+        c.src = "https://www.smartsuppchat.com/loader.js?";
+        s.parentNode.insertBefore(c, s);
+      })(document);
+  </script>
+
+  <!-- Cookies Popup -->
+  <div id="cookie-popup" class="cookie-popup">
+    <p>
+      We use cookies to enhance your experience. By using our site, you agree to
+      our cookie policy.
+      <a href="cookies.html" style="color: #037a8e">Learn more</a>.
+    </p>
+    <button id="accept-cookies" class="btn btn-primary">Accept</button>
+  </div>
+
+  <style>
+    /* Cookies Popup Styles */
+    .cookie-popup {
+      position: fixed;
+      bottom: 20px;
+      left: 10%;
+      right: 10%;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .cookie-popup p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .cookie-popup button {
+      background-color: #037a8e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .cookie-popup button:hover {
+      background-color: #ffa132;
+    }
+  </style>
+
+  <script>
+    // Cookies Popup JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+      const cookiePopup = document.getElementById("cookie-popup");
+      const acceptCookiesButton = document.getElementById("accept-cookies");
+
+      // Check if cookies have already been accepted
+      if (!localStorage.getItem("cookiesAccepted")) {
+        cookiePopup.style.display = "flex";
+      }
+
+      // Handle "Accept" button click
+      acceptCookiesButton.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookiePopup.style.display = "none";
+      });
+    });
+  </script>
+
+  <body
+    id="body"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="100"
+    onload="animateText()"
+  >
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+        <div class="container">
+          <div class="navbar-brand-wrapper d-flex w-100">
+            <img src="images/logos/1.svg" alt="" />
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="mdi mdi-menu navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse navbar-menu-wrapper"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav align-items-lg-center align-items-start ml-auto"
+            >
+              <li
+                class="d-flex align-items-center justify-content-between pl-4 pl-lg-0"
+              >
+                <div class="navbar-collapse-logo">
+                  <img src="images/logos/1.svg" alt="" />
+                </div>
+                <button
+                  class="navbar-toggler close-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#header-section"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services-section">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="career.html">Career</a>
+              </li>
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <a
+                  href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  class="btn btn-primary d-none d-lg-inline-block"
+                  role="button"
+                >
+                  <span class="mdi mdi-whatsapp"></span> Contact Us
+                </a>
+              </li>
+
+              <!-- Social Media Icons (Visible only on smaller screens) -->
+              <li class="nav-item d-lg-none text-center mt-3">
+                <a href="https://wa.me/message/TVWBMAG3BNWDH1" class="mx-2">
+                  <span class="mdi mdi-whatsapp mdi-24px"></span>
+                </a>
+                <a href="https://x.com/huddlestech?s=21" class="mx-2">
+                  <span class="mdi mdi-twitter mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-instagram mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/huddlestechnologies"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-linkedin mdi-24px"></span>
+                </a>
+                <a href="https://github.com/HuddlesTechnologies" class="mx-2">
+                  <span class="mdi mdi-github-circle mdi-24px"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <div class="container">
+        <h1
+          id="main-text"
+          class="font-weight-semibold"
+          style="color: #037a8e; font-size: 3rem"
+        >
+          LET'S CREATE SOMETHING CAPTIVATING
+        </h1>
+        <p class="sub-text" style="color: #ffffff">
+          BLENDING CREATIVITY WITH TECHNOLOGY
+        </p>
+        <div class="image-container">
+          <img height="600px" width="500px" src="images/008.webp" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .image-container img {
+        height: 500px;
+        width: auto;
+      }
+    </style>
+
+    <!----rise up css and js starts here-->
+    <script>
+      function animateText() {
+        var mainText = document.getElementById("main-text");
+        mainText.classList.add("rise-up");
+
+        var subText = document.querySelector(".sub-text");
+        subText.classList.add("rise-up");
+      }
+    </script>
+
+    <style>
+      .banner {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .font-weight-semibold {
+        font-weight: bold;
+      }
+
+      .rise-up {
+        animation: riseUp 2s ease-out forwards;
+        opacity: 0;
+        transform: translateY(80px);
+      }
+
+      @keyframes riseUp {
+        from {
+          opacity: 0;
+          transform: translateY(80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+    <!----ends here-->
+    <br />
+    <br />
+    <br />
+    <section class="digital-marketing-service" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="content-header">
+              <center>
+                <h2><b>ABOUT US</b></h2>
+              </center>
+            </div>
+            <br />
+            <p>
+              Huddles Technologies is a forward thinking digital agency brand
+              under Huddles Technologies Ltd, delivering end-to-end solutions
+              across web development, app development, branding, social media
+              management, and product design. We specialize in building user
+              centric digital experiences that help businesses establish a
+              strong brand presence and scale effectively in today’s competitive
+              digital landscape. Our multidisciplinary team combines strategy,
+              design, and engineering to craft high quality, custom solutions
+              using cutting edge technologies and industry best practices. From
+              brand identity and product design to responsive websites,
+              e-commerce platforms, web applications, and content management
+              systems, we create cohesive digital products that are both
+              visually compelling and technically robust.
+            </p>
+            <p>
+              With a collaborative, client first approach, we work closely with
+              you to transform ideas into impactful digital products. Whether
+              you’re launching a new brand, growing your online presence, or
+              building scalable software, Huddles Technologies partners with you
+              to design, build, and manage solutions that drive measurable
+              results.
+              <a href="about.html">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-wrapper">
+      <div class="container">
+        <section
+          class="features-overview"
+          id="our-approach"
+          style="padding: 60px 0; background-color: white"
+        >
+          <div class="container">
+            <div class="row">
+              <!-- Heading aligned to the left -->
+              <div class="col-12">
+                <h2 class="section-heading" style="color: #037a8e">
+                  <b>OUR ESSENTIAL PROCESS</b>
+                </h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- First Set of Texts -->
+              <div class="col-12 feature-set visible" id="feature-set-1">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>01</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Planning</b></h5>
+                    <p class="process-description">
+                      We begin by developing a thorough understanding of your
+                      unique business objectives, target audience and project
+                      requirements. Through in-depth consultations and strategic
+                      discovery sessions, we ensure full alignment with your
+                      vision and goals, laying a strong foundation for a
+                      solution that delivers measurable impact.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second Set of Texts -->
+              <div class="col-12 feature-set hidden" id="feature-set-2">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>02</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Development</b></h5>
+                    <p class="process-description">
+                      Our team of designers and developers collaborate closely
+                      to deliver visually sophisticated and functionally robust
+                      websites, with consistent client engagement integrated
+                      throughout the development lifecycle. By aligning
+                      creativity with technical precision, we ensure that every
+                      solution is user centric, performance driven and tailored
+                      to meet your strategic objectives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third Set of Texts -->
+              <div class="col-12 feature-set hidden" id="feature-set-3">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>03</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Iterative Process</b></h5>
+                    <p class="process-description">
+                      We provide multiple timely iterations to refine the design
+                      and functionality, efficiently incorporating your feedback
+                      at each stage. Our structured approach ensures the final
+                      solution not only meets your expectations but also adheres
+                      to project timelines and the highest standards of quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fourth Set of Texts -->
+              <div class="col-12 feature-set hidden" id="feature-set-4">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>04</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Quality Assurance</b></h5>
+                    <p class="process-description">
+                      Prior to launch, we conduct thorough quality assurance
+                      testing to ensure seamless performance, cross browser
+                      compatibility and a consistent user experience across all
+                      devices. Our process guarantees a website that is visually
+                      compelling, technically robust, secure and scalable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fifth Set of Texts -->
+              <div class="col-12 feature-set hidden" id="feature-set-5">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>05</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Launch</b></h5>
+                    <p class="process-description">
+                      We ensure a seamless launch through careful coordination,
+                      final stage optimizations and real time monitoring to
+                      address any unforeseen issues promptly. Following
+                      deployment, we provide continuous post launch support,
+                      including performance monitoring, security updates, bug
+                      fixes, and feature enhancements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sixth Set of Texts -->
+              <div class="col-12 feature-set hidden" id="feature-set-6">
+                <div class="row align-items-center">
+                  <div class="col-md-6 text-center">
+                    <p class="process-number"><b>06</b></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="process-title"><b>Satisfaction</b></h5>
+                    <p class="process-description">
+                      Your satisfaction is our top priority. We are dedicated to
+                      delivering exceptional results supported by responsive,
+                      high quality customer service throughout every phase of
+                      the project. Our approach is rooted in clear
+                      communication, transparency and a commitment to building
+                      long term partnerships ensuring your success well beyond
+                      the initial delivery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Redesigned animation CSS -->
+        <style>
+          .features-overview {
+            background-color: #0b0b0b;
+            padding: 60px 0;
+          }
+
+          .section-heading {
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            color: #ffffff;
+            text-align: left;
+          }
+
+          .feature-set {
+            --card-bg: #111;
+            position: relative;
+            opacity: 0;
+            transform: translateY(24px) scale(0.995);
+            transition:
+              opacity 600ms cubic-bezier(0.2, 0.9, 0.3, 1),
+              transform 600ms cubic-bezier(0.2, 0.9, 0.3, 1),
+              box-shadow 300ms;
+            margin-bottom: 28px;
+            background-color: var(--card-bg);
+            padding: 26px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+          }
+
+          /* When visible, pop into place */
+          .feature-set.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            box-shadow:
+              0 10px 30px rgba(0, 0, 0, 0.6),
+              0 2px 6px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.08);
+          }
+
+          .feature-set .process-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            transition:
+              transform 400ms cubic-bezier(0.2, 0.9, 0.3, 1),
+              color 300ms;
+            transform-origin: center;
+            margin: 0;
+          }
+
+          /* number pop when its panel becomes visible */
+          .feature-set.visible .process-number {
+            transform: scale(1.14) translateY(-2px);
+          }
+
+          .process-title {
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+          }
+
+          .process-description {
+            font-size: 1.05rem;
+            color: #d0d6db;
+            line-height: 1.6;
+          }
+
+          /* subtle hover lift for desktop */
+          @media (hover: hover) and (min-width: 768px) {
+            .feature-set:hover {
+              transform: translateY(-6px) scale(1.01);
+              box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+            }
+          }
+
+          @media (max-width: 768px) {
+            .process-number {
+              font-size: 2.2rem;
+            }
+            .process-title {
+              font-size: 1.25rem;
+            }
+            .process-description {
+              font-size: 1rem;
+            }
+          }
+        </style>
+
+        <script>
+          // Use IntersectionObserver for performant, staggered reveal
+          document.addEventListener("DOMContentLoaded", function () {
+            const sets = Array.from(document.querySelectorAll(".feature-set"));
+
+            if (!("IntersectionObserver" in window)) {
+              // Fallback: reveal all
+              sets.forEach((s) => s.classList.add("visible"));
+              return;
+            }
+
+            // Ensure all start hidden for consistent animation
+            sets.forEach((s) => {
+              s.classList.remove("visible");
+              s.classList.add("hidden");
+            });
+
+            const observerOptions = {
+              root: null,
+              rootMargin: "0px 0px -10% 0px",
+              threshold: 0.15,
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                const el = entry.target;
+                if (entry.isIntersecting) {
+                  // Stagger based on index for a pleasing cascade
+                  const idx = sets.indexOf(el);
+                  const delay = Math.min(400, idx * 140);
+                  setTimeout(() => {
+                    el.classList.add("visible");
+                    el.classList.remove("hidden");
+                  }, delay);
+                  // Stop observing once revealed
+                  observer.unobserve(el);
+                }
+              });
+            }, observerOptions);
+
+            sets.forEach((s) => observer.observe(s));
+          });
+        </script>
+        <br />
+        <section class="digital-marketing-service" id="services-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="section-heading" style="color: #037a8e">
+                  <b>OUR SERVICES</b>
+                </h2>
+                <div class="service-item">
+                  <h5 class="service-title">1. Web Development</h5>
+                  <p class="service-description">
+                    We specialize in both frontend and backend development to
+                    deliver modern, responsive and user-friendly websites
+                    tailored to your business needs. Our solutions ensure
+                    seamless functionality, top-tier performance and a
+                    captivating user experience.
+                  </p>
+                </div>
+
+                <div class="service-item">
+                  <h5 class="service-title">2. App Development</h5>
+                  <p class="service-description">
+                    We build high performance mobile and web applications that
+                    are scalable, secure and optimized for user engagement.
+                    Whether it's iOS, Android, or cross platform, we craft apps
+                    that bring your vision to life.
+                  </p>
+                </div>
+
+                <div class="service-item">
+                  <h5 class="service-title">
+                    3. Branding, UI/UX Design & Illustrations
+                  </h5>
+                  <p class="service-description">
+                    We create cohesive branding, intuitive UI/UX, and custom
+                    illustrations that bring your product to life. We design
+                    clear, user-focused visuals that enhance usability,
+                    strengthen your message, and create a consistent experience
+                    across web, mobile, and marketing channels.
+                  </p>
+                </div>
+
+                <div class="service-item">
+                  <h5 class="service-title">4. Product Strategy & Design</h5>
+                  <p class="service-description">
+                    We define, design, and launch products with clarity and
+                    purpose. We align business goals with user needs to create
+                    well structured product strategies and intuitive designs
+                    that drive adoption, usability, and long term growth.
+                    <a href="services.html">Learn More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5" data-aos="fade-left">
+                <img
+                  src="images/0077.webp"
+                  alt="Digital Marketing Image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-6 order-lg-2" data-aos="fade-right">
+                <img
+                  src="images/006.webp"
+                  alt="Online Presence Image"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-lg-6 order-lg-1" data-aos="fade-left">
+                <h2 class="section-heading" style="color: #037a8e">
+                  <b>WHY CHOOSE US?</b>
+                </h2>
+                <p class="service-description">
+                  At Huddles Technologies, we deliver innovative, results driven
+                  digital solutions that help businesses grow in today’s
+                  fast-moving digital landscape. Our experienced team partners
+                  with you to design, build, and optimize digital experiences
+                  that create real impact.
+                </p>
+                <p class="service-description">
+                  We provide a full suite of services, including branding,
+                  product design, social media management, website maintenance,
+                  content creation, digital marketing, and alot more, each
+                  tailored to your business goals. With a strong focus on
+                  quality, creativity, and performance, we ensure your brand
+                  stands out and delivers results in a competitive market.
+                </p>
+                <p class="service-description">
+                  Partner with Huddles Technologies to build a strong online
+                  presence that drives growth and measurable results. Let’s work
+                  together to turn your vision into scalable digital success.
+                </p>
+
+                <a
+                  href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  class="btn btn-primary mt-4"
+                >
+                  <span class="mdi mdi-whatsapp"></span> Contact Us on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
+        <!----COMPLETED PROJECTS-->
+        <section class="projects-section" id="projects-section">
+          <div class="container">
+            <h2 class="text-center mb-5" style="color: #037a8e">
+              <b>WEB & APP PROJECTS</b>
+            </h2>
+            <div
+              id="projectsCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="3000"
+            >
+              <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-4 mb-4">
+                      <div class="portfolio-item">
+                        <img
+                          src="images/pj/pj01.svg"
+                          height="800px"
+                          width="800px"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <center>
+                          <a
+                            href="https://efosa42.github.io/ReeksGrill/"
+                            target="_blank"
+                            class="btn btn-primary btn-sm"
+                            role="button"
+                            >Visit Website</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="portfolio-item">
+                        <img
+                          src="images/pj/pj04.svg"
+                          height="700px"
+                          width="700px"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <center>
+                          <a
+                            href="https://medsmartnig.com"
+                            target="_blank"
+                            class="btn btn-primary btn-sm"
+                            role="button"
+                            >Visit Website</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="portfolio-item">
+                        <img
+                          src="images/pj/pj03.svg"
+                          height="700px"
+                          width="700px"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <center>
+                          <a
+                            href="https://podoskiofficial.com/"
+                            target="_blank"
+                            class="btn btn-primary btn-sm"
+                            role="button"
+                            >Visit Website</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Controls -->
+              <a
+                class="carousel-control-prev"
+                href="#projectsCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#projectsCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+        <br />
+        <br />
+        <section class="grid-section">
+          <div class="container">
+            <h2 class="text-center mb-5" style="color: #037a8e">
+              <b>BRANDING PROJECTS</b>
+            </h2>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 grid-box">
+                <a
+                  href="https://www.instagram.com/p/DUtci2jDQ57/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                >
+                  <img
+                    src="images/Ads/ads01.webp"
+                    alt="Grid Image 1"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 grid-box">
+                <a
+                  href="https://www.instagram.com/p/DUh1lprDaYP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  ><img
+                    src="images/Ads/ads02.webp"
+                    alt="Grid Image 2"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 grid-box">
+                <a
+                  href="https://www.instagram.com/p/DUDACeJDTqz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  ><img /><img
+                    src="images/Ads/ads03.webp"
+                    alt="Grid Image 3"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 grid-box">
+                <a
+                  href="https://www.instagram.com/reel/DUICtOLDE5x/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                >
+                  <img
+                    src="images/Ads/ads04.webp"
+                    alt="Grid Image 4"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="text-center mt-4 mb-5">
+          <a href="projects.html" class="btn btn-primary">See All Projects</a>
+        </div>
+
+        <style>
+          .grid-section {
+            padding: 20px 0;
+          }
+
+          .grid-box {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .grid-box img {
+            width: auto;
+            height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          @media (max-width: 768px) {
+            .grid-box {
+              margin-bottom: 15px;
+            }
+          }
+        </style>
+
+        <br />
+        <br />
+        <section class="contact-us" id="contact-section">
+          <div class="contact-us-bgimage grid-margin">
+            <div class="pb-4">
+              <h4
+                class="px-3 px-md-0 m-0"
+                data-aos="fade-down"
+                style="color: white"
+              >
+                Do you have any projects?
+              </h4>
+              <h4 class="pt-1" data-aos="fade-down" style="color: white">
+                Contact us!
+              </h4>
+            </div>
+            <div data-aos="fade-up">
+              <!-- HTML !-->
+              <a href="tel:08103940242"
+                ><button class="button-1" role="button">Call Now</button></a
+              >
+            </div>
+          </div>
+
+          <!---button css code-->
+
+          <style>
+            /* CSS */
+            .button-1 {
+              background-color: #03798e;
+              border-radius: 8px;
+              border-style: none;
+              box-sizing: border-box;
+              color: #d9d9d9;
+              cursor: pointer;
+              display: inline-block;
+              font-family:
+                "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+                sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              height: 40px;
+              line-height: 20px;
+              list-style: none;
+              margin: 0;
+              outline: none;
+              padding: 10px 16px;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              transition: color 100ms;
+              vertical-align: baseline;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+            }
+
+            .button-1:hover,
+            .button-1:focus {
+              background-color: #ffa132;
+            }
+          </style>
+        </section>
+        <section class="contact-details" id="contact-details-section">
+          <div class="row text-center text-md-left">
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Contact Us</h5>
+              <div class="pt-2">
+                <a href="mailto:info@huddlestechnologies.online"
+                  ><p class="text-muted m-0">
+                    info@huddlestechnologies.online
+                  </p></a
+                >
+                <a href="tel:08103940242"
+                  ><p class="text-muted m-0">08103940242</p></a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Don't miss out</h5>
+              <p class="text-muted">
+                Want to stay in the loop with all the latest info? Just hit that
+                subscribe button for our newsletter today!📧 Stay updated!
+              </p>
+              <form>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Email Address"
+                />
+              </form>
+              <div class="pt-3">
+                <button class="btn btn-dark">Subscribe</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Useful Links</h5>
+              <a href="about.html"><p class="m-0 pt-1 pb-2">About</p></a>
+              <a href="services.html"><p class="m-0 pb-2">Services</p></a>
+              <a href="projects.html"><p class="m-0 pt-1 pb-2">Projects</p></a>
+              <a href="survey.html"><p class="m-0 pt-1">Survey</p></a>
+              <a href="blog.html"><p class="m-0 pt-1">Blog</p></a>
+              <a href="courses.html"><p class="m-0 pt-1">Courses</p></a>
+              <a href="career.html"><p class="m-0 pt-1">Career</p></a>
+              <a href="privacy.html"><p class="m-0 pt-1">Privacy Policy</p></a>
+              <a href="privacymgt.html"
+                ><p class="m-0 pt-1">Privacy Management</p></a
+              >
+              <a href="legalguide.html"
+                ><p class="m-0 pt-1">Legal Guidelines</p></a
+              >
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Our address</h5>
+              <p class="text-muted">
+                At the moment, we do not have a physical office space. We're
+                currently operating remotely.
+              </p>
+              <div
+                class="d-flex justify-content-center justify-content-md-start"
+              >
+                <a href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  ><span class="mdi mdi-whatsapp"></span
+                ></a>
+                <a href="https://x.com/huddlestech?s=21"
+                  ><span class="mdi mdi-twitter"></span
+                ></a>
+                <a
+                  href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                  ><span class="mdi mdi-instagram"></span
+                ></a>
+                <a href="https://www.linkedin.com/company/huddlestechnologies"
+                  ><span class="mdi mdi-linkedin"></span
+                ></a>
+                <a href="https://github.com/HuddlesTechnologies"
+                  ><span class="mdi mdi-github-circle"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="border-top">
+          <p class="text-center text-muted pt-4">
+            Copyright ©2023-2026
+            <b>Huddles Technologies, </b> a trademark of
+            <b>Huddles Technologies Ltd.</b> All rights reserved.<br /><a
+              href="privacymgt.html"
+              style="color: #4b4949"
+              >Privacy Management</a
+            >
+            |
+            <a href="privacy.html" style="color: #4b4949">Privacy Policies</a> |
+            <a href="legalguide.html" style="color: #4b4949"
+              >Legal Guidelines</a
+            >
+          </p>
+        </footer>
+
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="vendors/aos/js/aos.js"></script>
+        <script src="js/landingpage.js"></script>
+        <button id="back-to-top" title="Back to top">&#8679;</button>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const backBtn = document.getElementById("back-to-top");
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 300) backBtn.classList.add("show");
+              else backBtn.classList.remove("show");
+            });
+            backBtn.addEventListener("click", () => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+          });
+        </script>
+        <!--carousel codes-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

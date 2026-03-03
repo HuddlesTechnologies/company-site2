@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Explore our portfolio of completed website projects at HuddlesTech. Discover how we've helped businesses across various industries achieve their online goals with our expert web development services."
+    />
+    <meta
+      name="keywords"
+      content="Huddles Technologies, Website Development, Projects, Web Design, Web Development"
+    />
+    <meta
+      name="author"
+      content="Oviawe Efosa Iruosa - Founder of Huddles Technologies"
+    />
+    <meta
+      property="og:title"
+      content="Huddles Technologies Completed Projects - Check Out Our Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore our portfolio of completed website projects at HuddlesTech. Discover how we've helped businesses across various industries achieve their online goals with our expert web development services."
+    />
+    <meta
+      property="og:image"
+      content="https://www.huddlestechnologies.online/images/og-image.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.huddlestechnologies.online/projects"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="twitter:title"
+      content="Huddles Technologies Completed Projects - Check Out Our Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore our portfolio of completed website projects at HuddlesTech. Discover how we've helped businesses across various industries achieve their online goals with our expert web development services."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.huddlestechnologies.online/images/twitter-image.svg"
+    />
+    <title>
+      Huddles Technologies Completed Projects - Check Out Our Portfolio
+    </title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="vendors/aos/css/aos.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- prevent image download attempts -->
+    <style>
+      img {
+        -webkit-user-drag: none;
+        user-drag: none;
+        pointer-events: none; /* disable drag start but not recommended for clickable images; overlays handle interactive ones */
+      }
+      /* Filter buttons */
+      .filter-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+      .filter-btn {
+        background-color: #037a8e;
+        color: white;
+        border: 2px solid #037a8e;
+        padding: 8px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .filter-btn:hover {
+        background-color: #ffa132;
+        border-color: #ffa132;
+        color: white;
+      }
+      /* back to top button */
+      #back-to-top {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #037a8e;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      #back-to-top.show {
+        opacity: 1;
+      }
+    </style>
+    <!-- Branding projects styles -->
+    <style>
+      .branding-projects-section h2 {
+        color: #037a8e;
+        margin-bottom: 40px;
+      }
+
+      .branding-card {
+        position: relative;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .branding-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .branding-card img.cover {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .branding-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 8px 0 4px;
+      }
+
+      .branding-short {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .branding-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+      }
+
+      .branding-overlay .overlay-content {
+        background: #fff;
+        width: 90%;
+        max-width: 960px;
+        max-height: 90%;
+        overflow-y: auto;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .branding-overlay #branding-close {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #333;
+      }
+
+      .branding-overlay .overlay-images img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+    </style>
+    <!-- Structured data markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Huddles Technologies Completed Projects",
+        "url": "https://www.huddlestechnologies.online/projects",
+        "description": "Explore our portfolio of completed website projects at Huddles Technologies. Discover how we've helped businesses across various industries achieve their online goals with our expert web development services.",
+
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.huddlestechnologies.online/images/og-image.svg",
+          "width": 1200,
+          "height": 630
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Huddles Technologies Limited",
+          "url": "https://www.huddlestechnologies.online",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.huddlestechnologies.online/images/logos/1.svg",
+            "width": 600,
+            "height": 60
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebSite",
+          "@id": "https://www.huddlestechnologies.online"
+        }
+      }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="images/logos/prime.webp" />
+  </head>
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+        <div class="container">
+          <div class="navbar-brand-wrapper d-flex w-100">
+            <img src="images/logos/1.svg" alt="" />
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="mdi mdi-menu navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse navbar-menu-wrapper"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav align-items-lg-center align-items-start ml-auto"
+            >
+              <li
+                class="d-flex align-items-center justify-content-between pl-4 pl-lg-0"
+              >
+                <div class="navbar-collapse-logo">
+                  <img src="images/logos/1.svg" alt="" />
+                </div>
+                <button
+                  class="navbar-toggler close-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#header-section"
+                  >Projects<span class="sr-only">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="career.html">Career</a>
+              </li>
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <a
+                  href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  class="btn btn-primary d-none d-lg-inline-block"
+                  role="button"
+                >
+                  <span class="mdi mdi-whatsapp"></span> Contact Us
+                </a>
+              </li>
+              <!-- Social Media Icons (Visible only on smaller screens) -->
+              <li class="nav-item d-lg-none text-center mt-3">
+                <a href="https://wa.me/message/TVWBMAG3BNWDH1" class="mx-2">
+                  <span class="mdi mdi-whatsapp mdi-24px"></span>
+                </a>
+                <a href="https://x.com/huddlestech?s=21" class="mx-2">
+                  <span class="mdi mdi-twitter mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-instagram mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/huddlestechnologies"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-linkedin mdi-24px"></span>
+                </a>
+                <a href="https://github.com/HuddlesTechnologies" class="mx-2">
+                  <span class="mdi mdi-github-circle mdi-24px"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      _smartsupp.key = "4b1c319e4ec131598d2878d6bb352740252421fa";
+      window.smartsupp ||
+        (function (d) {
+          var s,
+            c,
+            o = (smartsupp = function () {
+              o._.push(arguments);
+            });
+          o._ = [];
+          s = d.getElementsByTagName("script")[0];
+          c = d.createElement("script");
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.async = true;
+          c.src = "https://www.smartsuppchat.com/loader.js?";
+          s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+
+    <!---SECTION BEGINS---->
+
+    <div class="banner">
+      <div class="container">
+        <h1 class="font-weight-semibold" style="color: #037a8e">
+          COMPLETED PROJECTS
+        </h1>
+        <h6 class="font-weight-normal text-muted pb-3" style="color: #4b4949">
+          Our Portfolio of Success Stories
+        </h6>
+        <div class="filter-buttons">
+          <a href="#portfolio-section" class="filter-btn">Web & App</a>
+          <a href="#branding-section" class="filter-btn">Branding</a>
+          <a href="#graphics-section" class="filter-btn">Graphics</a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <!----=================================================================================================-->
+    <div class="content-wrapper">
+      <div class="container">
+        <!-- Portfolio Section -->
+        <!----COMPLETED PROJECTS-->
+        <section class="projects-section" id="portfolio-section">
+          <div class="container">
+            <h2 class="text-center" style="color: #037a8e">
+              <b>COMPLETED WEB & APP PROJECTS</b>
+            </h2>
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj09.svg"
+                    height="800px"
+                    width="800px"
+                    class="img-fluid"
+                    alt=""
+                  />
+
+                  <center>
+                    <a
+                      href="https://anniesbeauty.biz"
+                      class="btn btn-primary btn-sm"
+                      role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj10.svg"
+                    height="700px"
+                    width="700px"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <br />
+                  <br />
+                  <center>
+                    <a
+                      href="https://dicksonhenrylegal.com/"
+                      class="btn btn-primary btn-sm"
+                      role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj03.svg"
+                    height="700px"
+                    width="700px"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <center>
+                    <a
+                      href="https://podoskiofficial.com/"
+                      class="btn btn-primary btn-sm"
+                      role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj05.svg"
+                    height="700px"
+                    width="700px"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <center>
+                    <a href="#" class="btn btn-primary btn-sm" role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj04.svg"
+                    height="700px"
+                    width="700px"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <br />
+                  <br />
+
+                  <center>
+                    <a
+                      href="https://medsmartnig.com"
+                      class="btn btn-primary btn-sm"
+                      role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="col-lg-4 mb-4">
+                <div class="portfolio-item">
+                  <img
+                    src="images/pj/pj01.svg"
+                    height="700px"
+                    width="700px"
+                    class="img-fluid"
+                    alt=""
+                  />
+
+                  <center>
+                    <a
+                      href="https://efosa42.github.io/ReeksGrill/"
+                      class="btn btn-primary btn-sm"
+                      role="button"
+                      >Visit Website</a
+                    >
+                  </center>
+                </div>
+              </div>
+              <!-- 8 -->
+              <!--project 8 used to be  here--->
+            </div>
+          </div>
+        </section>
+        <!----=================================-->
+        <br />
+        <br />
+        <br />
+        <!-- Branding Projects Section -->
+        <section class="branding-projects-section" id="branding-section">
+          <div class="container">
+            <h2 class="text-center"><b>COMPLETED BRANDING PROJECTS</b></h2>
+            <div class="row" id="branding-grid">
+              <!-- six branding cards -->
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/j1.webp,images/branding/j2.webp,images/branding/j3.webp,images/branding/j4.webp,images/branding/j5.webp,images/branding/j6.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/j1.webp"
+                    class="cover"
+                    alt="Brand 1"
+                  />
+                  <h5 class="branding-name">JOJO'S Burger</h5>
+                  <p class="branding-short">
+                    Jojo’s Burger is a fast food brand designed around a calm,
+                    collected atmosphere where comfort meets flavor.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/g1.webp,images/branding/g2.webp,images/branding/g3.webp,images/branding/g4.webp,images/branding/g5.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/g1.webp"
+                    class="cover"
+                    alt="Brand 3"
+                  />
+                  <h5 class="branding-name">GRANDEUR</h5>
+                  <p class="branding-short">
+                    GRANDEUR is an Africa based real estate brand developed to
+                    reflect trust, prestige, and modern urban living. The brand
+                    identity was designed to convey reliability and
+                    sophistication.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/n1.webp,images/branding/n2.webp,images/branding/n3.webp,images/branding/n4.webp,images/branding/n5.webp,images/branding/n6.webp,images/branding/n7.webp,images/branding/n8.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/n1.webp"
+                    class="cover"
+                    alt="Brand 2"
+                  />
+                  <h5 class="branding-name">Noresè</h5>
+                  <p class="branding-short">
+                    Noresè is a fashion and lifestyle brand project that
+                    celebrates cultural heritage through a refined, modern
+                    aesthetic.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/s1.webp,images/branding/s2.webp,images/branding/s3.webp,images/branding/s4.webp,images/branding/s5.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/s1.webp"
+                    class="cover"
+                    alt="Brand 4"
+                  />
+                  <h5 class="branding-name">STARK GADGET</h5>
+                  <p class="branding-short">
+                    STARK GADGET is a tech retail brand identity project for a
+                    one stop shop offering phones, devices, and accessories.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/c11.webp,images/branding/c1.webp,images/branding/c2.webp,images/branding/c3.webp,images/branding/c4.webp,images/branding/c5.webp,images/branding/c6.webp,images/branding/c8.webp,images/branding/c9.webp,images/branding/c10.webp,images/branding/c7.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/c11.webp"
+                    class="cover"
+                    alt="Brand 5"
+                  />
+                  <h5 class="branding-name">CHRIME</h5>
+                  <p class="branding-short">
+                    CHRIME is a streetwear fashion brand that fuses dark luxury
+                    with contemporary urban style. The brand identity expresses
+                    bold individuality.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 branding-box"
+                data-images="images/branding/et1.webp,images/branding/et2.webp,images/branding/et3.webp,images/branding/et4.webp,images/branding/et5.webp,images/branding/et6.webp,images/branding/et7.webp,images/branding/et8.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/branding/et1.webp"
+                    class="cover"
+                    alt="Brand 6"
+                  />
+                  <h5 class="branding-name">ETW Originals</h5>
+                  <p class="branding-short">
+                    ETW Originals is a Nigerian streetwear startup built around
+                    bold, iconic designs that celebrate individuality and urban
+                    culture.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- overlay for expanded view -->
+          <div id="branding-overlay" class="branding-overlay d-none">
+            <div class="overlay-content">
+              <button id="branding-close">&times;</button>
+              <h3 id="overlay-name"></h3>
+              <p id="overlay-description"></p>
+              <div class="overlay-images row"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Graphics & Illustrations Section -->
+        <section class="branding-projects-section" id="graphics-section">
+          <div class="container">
+            <h2 class="text-center">
+              <b>GRAPHICS, MOCKUPS & ILLUSTRATIONS</b>
+            </h2>
+            <div class="row" id="graphics-grid">
+              <!-- six graphics cards -->
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/ace2.webp,images/graphics/ace3.webp,images/graphics/ace4.webp,images/graphics/ace6.webp,images/graphics/ace7.webp,images/graphics/ace8.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/ace2.webp"
+                    class="cover"
+                    alt="Graphic 1"
+                  />
+                  <h5 class="branding-name">DOPE BOY COLLECTION</h5>
+                  <p class="branding-short">
+                    Official apparel collection designed for Ace Apparel.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/et01.webp,images/graphics/et2.webp,images/graphics/et3.webp,images/graphics/et4.webp,images/graphics/et5.webp,images/graphics/et6.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/et01.webp"
+                    class="cover"
+                    alt="Graphic 3"
+                  />
+                  <h5 class="branding-name">ETW Utopia</h5>
+                  <p class="branding-short">
+                    Custom graphic designs for ETW Original T-shirt collection.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/ace1.webp,images/graphics/do5.webp,images/graphics/do4.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/ace1.webp"
+                    class="cover"
+                    alt="Graphic 2"
+                  />
+                  <h5 class="branding-name">DOPE BOY ART</h5>
+                  <p class="branding-short">
+                    Official artwork for Ace Apparels’ Dope Boy Collection.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/st1.webp,images/graphics/st2.webp,images/graphics/st3.webp,images/graphics/st4.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/st1.webp"
+                    class="cover"
+                    alt="Graphic 4"
+                  />
+                  <h5 class="branding-name">Stark Gadget Graphics</h5>
+                  <p class="branding-short">
+                    Poster design series for Stark Gadget.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/MAYBACH.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/MAYBACH.webp"
+                    class="cover"
+                    alt="Graphic 5"
+                  />
+                  <h5 class="branding-name">Maybach Cover</h5>
+                  <p class="branding-short">
+                    Official cover artwork for Podoski’s single, “Maybach.”
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-4 mb-4 graphics-box"
+                data-images="images/graphics/cb1.webp,images/graphics/cb2.webp"
+              >
+                <div class="branding-card">
+                  <img
+                    src="images/graphics/cb1.webp"
+                    class="cover"
+                    alt="Graphic 6"
+                  />
+                  <h5 class="branding-name">Cry Baby</h5>
+                  <p class="branding-short">
+                    Creative artwork and design for the “Cry Baby” concept.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-us" id="contact-section">
+          <div class="contact-us-bgimage grid-margin">
+            <div class="pb-4">
+              <h4
+                class="px-3 px-md-0 m-0"
+                data-aos="fade-down"
+                style="color: white"
+              >
+                Do you have any projects?
+              </h4>
+              <h4 class="pt-1" data-aos="fade-down" style="color: white">
+                Contact us!
+              </h4>
+            </div>
+            <div data-aos="fade-up">
+              <!-- HTML !-->
+              <a href="tel:08103940242"
+                ><button class="button-1" role="button">Call Now</button></a
+              >
+            </div>
+          </div>
+
+          <!---button css code-->
+
+          <style>
+            /* CSS */
+            .button-1 {
+              background-color: #03798e;
+              border-radius: 8px;
+              border-style: none;
+              box-sizing: border-box;
+              color: #d9d9d9;
+              cursor: pointer;
+              display: inline-block;
+              font-family:
+                "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+                sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              height: 40px;
+              line-height: 20px;
+              list-style: none;
+              margin: 0;
+              outline: none;
+              padding: 10px 16px;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              transition: color 100ms;
+              vertical-align: baseline;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+            }
+
+            .button-1:hover,
+            .button-1:focus {
+              background-color: #ffa132;
+            }
+          </style>
+        </section>
+
+        <div class="content-wrapper">
+          <div class="container">
+            <section class="contact-details" id="contact-details-section">
+              <div class="row text-center text-md-left">
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Contact Us</h5>
+                  <div class="pt-2">
+                    <a href="mailto:info@huddlestechnologies.online"
+                      ><p class="text-muted m-0">
+                        info@huddlestechnologies.online
+                      </p></a
+                    >
+                    <a href="tel:08103940242"
+                      ><p class="text-muted m-0">08103940242</p></a
+                    >
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Don't miss out</h5>
+                  <p class="text-muted">
+                    Want to stay in the loop with all the latest info? Just hit
+                    that subscribe button for our newsletter today!📧 Stay
+                    updated!
+                  </p>
+                  <form>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Email"
+                      placeholder="Email Address"
+                    />
+                  </form>
+                  <div class="pt-3">
+                    <button class="btn btn-dark">Subscribe</button>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Useful Links</h5>
+                  <a href="about.html"><p class="m-0 pt-1 pb-2">About</p></a>
+                  <a href="services.html"><p class="m-0 pb-2">Services</p></a>
+                  <a href="projects.html"
+                    ><p class="m-0 pt-1 pb-2">Projects</p></a
+                  >
+                  <a href="survey.html"><p class="m-0 pt-1">Survey</p></a>
+                  <a href="blog.html"><p class="m-0 pt-1">Blog</p></a>
+                  <a href="courses.html"><p class="m-0 pt-1">Courses</p></a>
+                  <a href="career.html"><p class="m-0 pt-1">Career</p></a>
+                  <a href="privacy.html"
+                    ><p class="m-0 pt-1">Privacy Policy</p></a
+                  >
+                  <a href="privacymgt.html"
+                    ><p class="m-0 pt-1">Privacy Management</p></a
+                  >
+                  <a href="legalguide.html"
+                    ><p class="m-0 pt-1">Legal Guidelines</p></a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Our address</h5>
+                  <p class="text-muted">
+                    At the moment, we do not have a physical office space. We're
+                    currently operating remotely.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <a href="https://wa.me/message/TVWBMAG3BNWDH1"
+                      ><span class="mdi mdi-whatsapp"></span
+                    ></a>
+                    <a href="https://x.com/huddlestech?s=21"
+                      ><span class="mdi mdi-twitter"></span
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                      ><span class="mdi mdi-instagram"></span
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/huddlestechnologies"
+                      ><span class="mdi mdi-linkedin"></span
+                    ></a>
+                    <a href="https://github.com/HuddlesTechnologies"
+                      ><span class="mdi mdi-github-circle"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="border-top">
+              <p class="text-center text-muted pt-4">
+                Copyright ©2023-2026
+                <b>Huddles Technologies, </b> a trademark of
+                <b>Huddles Technologies Ltd.</b> All rights reserved.<br /><a
+                  href="privacymgt.html"
+                  style="color: #4b4949"
+                  >Privacy Management</a
+                >
+                |
+                <a href="privacy.html" style="color: #4b4949"
+                  >Privacy Policies</a
+                >
+                |
+                <a href="legalguide.html" style="color: #4b4949"
+                  >Legal Guidelines</a
+                >
+              </p>
+            </footer>
+
+            <!---JS section-->
+            <script src="vendors/jquery/jquery.min.js"></script>
+            <script src="vendors/bootstrap/bootstrap.min.js"></script>
+            <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+            <script src="vendors/aos/js/aos.js"></script>
+            <script src="js/landingpage.js"></script>
+            <button id="back-to-top" title="Back to top">&#8679;</button>
+            <!-- Branding projects interactivity -->
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const boxes = document.querySelectorAll(
+                  ".branding-box, .graphics-box",
+                );
+                // make all images non-downloadable by disabling context menu & drag
+                document.querySelectorAll("img").forEach((img) => {
+                  img.setAttribute("draggable", "false");
+                  img.addEventListener("contextmenu", (e) =>
+                    e.preventDefault(),
+                  );
+                });
+                const overlay = document.getElementById("branding-overlay");
+                const closeBtn = document.getElementById("branding-close");
+                const overlayName = document.getElementById("overlay-name");
+                const overlayDesc = document.getElementById(
+                  "overlay-description",
+                );
+                const overlayImagesContainer =
+                  document.querySelector(".overlay-images");
+
+                boxes.forEach((box) => {
+                  box.addEventListener("click", () => {
+                    const imgList = box.getAttribute("data-images").split(",");
+                    const name =
+                      box.querySelector(".branding-name").textContent;
+                    const short =
+                      box.querySelector(".branding-short").textContent;
+                    // provide full description same as short for now, can be expanded later
+                    const full = short + " ";
+
+                    overlayName.textContent = name;
+                    overlayDesc.textContent = full;
+                    overlayImagesContainer.innerHTML = "";
+
+                    imgList.forEach((src) => {
+                      const col = document.createElement("div");
+                      col.className = "col-12 col-md-6 mb-3";
+                      const img = document.createElement("img");
+                      img.src = src.trim();
+                      img.alt = name;
+                      img.className = "img-fluid";
+                      col.appendChild(img);
+                      overlayImagesContainer.appendChild(col);
+                    });
+
+                    overlay.classList.remove("d-none");
+                  });
+                });
+
+                closeBtn.addEventListener("click", () => {
+                  overlay.classList.add("d-none");
+                });
+
+                // close when clicking outside content
+                overlay.addEventListener("click", (e) => {
+                  if (e.target === overlay) {
+                    overlay.classList.add("d-none");
+                  }
+                });
+
+                // back-to-top button
+                const backBtn = document.getElementById("back-to-top");
+                window.addEventListener("scroll", () => {
+                  if (window.scrollY > 300) backBtn.classList.add("show");
+                  else backBtn.classList.remove("show");
+                });
+                backBtn.addEventListener("click", () => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

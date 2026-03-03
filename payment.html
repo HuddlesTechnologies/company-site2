@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Make secure payments for our services. Fast, reliable, and seamless payment solutions tailored for your web development needs."
+    />
+    <meta
+      name="keywords"
+      content="Huddles Technologies, Website Development, payments, Web Design, Web Development"
+    />
+    <meta
+      name="author"
+      content="Oviawe Efosa Iruosa - Founder of Huddles Technologies"
+    />
+    <meta
+      property="og:title"
+      content="Huddles Technologies Payment Page - Secure and Reliable Transactions"
+    />
+    <meta
+      property="og:description"
+      content="Make secure payments for our services. Fast, reliable, and seamless payment solutions tailored for your web development needs."
+    />
+    <meta
+      property="og:image"
+      content="https://www.huddlestechnologies.online/images/og-image.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.huddlestechnologies.online/payments"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="twitter:title"
+      content="Huddles Technologies Payment Page - Secure and Reliable Transactions"
+    />
+    <meta
+      name="twitter:description"
+      content="Make secure payments for our services. Fast, reliable, and seamless payment solutions tailored for your web development needs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.huddlestechnologies.online/images/twitter-image.svg"
+    />
+    <title>
+      Huddles Technologies Payment Page - Secure and Reliable Transactions
+    </title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendors/owl-carousel/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="vendors/aos/css/aos.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- Structured data markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Huddles Technologies Payment Page",
+        "url": "https://www.huddlestechnologies.online/projects",
+        "description": "Make secure payments for our services. Fast, reliable, and seamless payment solutions tailored for your web development needs.",
+        "image": "https://www.huddlestechnologies.online/images/og-image.svg",
+        "author": {
+          "@type": "Person",
+          "name": "Oviawe Efosa Iruosa",
+          "url": "https://www.huddlestechnologies.online/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Huddles Technologies Limited",
+          "url": "https://www.huddlestechnologies.online",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.huddlestechnologies.online/images/logos/1.svg"
+          }
+        },
+        "mainEntity": {
+          "@type": "WebSite",
+          "name": "Huddles Technologies",
+          "url": "https://www.huddlestechnologies.online"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.huddlestechnologies.online/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="images/logos/prime.webp" />
+    <style>
+      #back-to-top {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #037a8e;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      #back-to-top.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+        <div class="container">
+          <div class="navbar-brand-wrapper d-flex w-100">
+            <img src="images/logos/1.svg" alt="" />
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="mdi mdi-menu navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse navbar-menu-wrapper"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav align-items-lg-center align-items-start ml-auto"
+            >
+              <li
+                class="d-flex align-items-center justify-content-between pl-4 pl-lg-0"
+              >
+                <div class="navbar-collapse-logo">
+                  <img src="images/logos/1.svg" alt="" />
+                </div>
+                <button
+                  class="navbar-toggler close-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="career.html">Career</a>
+              </li>
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <a
+                  href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  class="btn btn-primary d-none d-lg-inline-block"
+                  role="button"
+                >
+                  <span class="mdi mdi-whatsapp"></span> Contact Us
+                </a>
+              </li>
+              <!-- Social Media Icons (Visible only on smaller screens) -->
+              <li class="nav-item d-lg-none text-center mt-3">
+                <a href="https://wa.me/message/TVWBMAG3BNWDH1" class="mx-2">
+                  <span class="mdi mdi-whatsapp mdi-24px"></span>
+                </a>
+                <a href="https://x.com/huddlestech?s=21" class="mx-2">
+                  <span class="mdi mdi-twitter mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-instagram mdi-24px"></span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/huddlestechnologies"
+                  class="mx-2"
+                >
+                  <span class="mdi mdi-linkedin mdi-24px"></span>
+                </a>
+                <a href="https://github.com/HuddlesTechnologies" class="mx-2">
+                  <span class="mdi mdi-github-circle mdi-24px"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      _smartsupp.key = "4b1c319e4ec131598d2878d6bb352740252421fa";
+      window.smartsupp ||
+        (function (d) {
+          var s,
+            c,
+            o = (smartsupp = function () {
+              o._.push(arguments);
+            });
+          o._ = [];
+          s = d.getElementsByTagName("script")[0];
+          c = d.createElement("script");
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.async = true;
+          c.src = "https://www.smartsuppchat.com/loader.js?";
+          s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+
+    <!---SECTION BEGINS-->
+
+    <div class="banner">
+      <div class="container">
+        <h1 class="font-weight-semibold" style="color: #037a8e">CHECK OUT</h1>
+        <h6 class="font-weight-normal text-muted pb-3" style="color: #4b4949">
+          Please fill in the form below to make a payment. <br />
+          <span style="color: #037a8e">Note:</span> Ensure you have a valid
+          <span style="color: #037a8e">email</span> and
+          <span style="color: #037a8e">phone number</span> to receive
+          confirmation of your payment. <br />
+        </h6>
+      </div>
+      <br />
+      <br />
+    </div>
+
+    
+
+    <!--=================================================================================================-->
+    <div class="content-wrapper">
+      <div class="container">
+        <section class="payment-section" id="payment-form-section">
+          <div class="container">
+            <form action="process-payment.php" method="POST">
+              <div class="row">
+                <!-- Full Name -->
+                <div class="col-lg-6 mb-4">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    class="form-control"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="col-lg-6 mb-4">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-lg-6 mb-4">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+
+                <!-- Amount -->
+                <div class="col-lg-6 mb-4">
+                  <label for="amount" class="form-label">Amount</label>
+                  <div class="input-group">
+                    <select
+                      id="currency"
+                      name="currency"
+                      class="form-control"
+                      style="max-width: 120px"
+                      required
+                    >
+                      <option value="NGN" selected>₦ (NGN)</option>
+                      <option value="USD">$ (USD)</option>
+                      <option value="EUR">€ (EUR)</option>
+                      <option value="GBP">£ (GBP)</option>
+                    </select>
+                    <input
+                      type="number"
+                      id="amount"
+                      name="amount"
+                      class="form-control"
+                      placeholder="Enter the amount"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- Payment Method -->
+                <div class="col-lg-6 mb-4">
+                  <label for="paymentMethod" class="form-label"
+                    >Payment Method</label
+                  >
+                  <select
+                    id="paymentMethod"
+                    name="paymentMethod"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select a payment method
+                    </option>
+                    <option value="creditCard">Credit/Debit Card</option>
+                    <option value="bankTransfer">Bank Transfer</option>
+                  </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Pay
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <style>
+          .payment-section {
+            padding: 40px 0;
+          }
+
+          .payment-section h2 {
+            color: #037a8e;
+          }
+
+          .form-label {
+            color: #4b4949;
+          }
+
+          .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+          }
+        </style>
+        <section class="contact-us" id="contact-section">
+          <div class="contact-us-bgimage grid-margin">
+            <div class="pb-4">
+              <h4
+                class="px-3 px-md-0 m-0"
+                data-aos="fade-down"
+                style="color: white"
+              >
+                Do you have any projects?
+              </h4>
+              <h4 class="pt-1" data-aos="fade-down" style="color: white">
+                Contact us!
+              </h4>
+            </div>
+            <div data-aos="fade-up">
+              <!-- HTML !-->
+              <a href="tel:08103940242"
+                ><button class="button-1" role="button">Call Now</button></a
+              >
+            </div>
+          </div>
+
+          <!---button css code-->
+
+          <style>
+            /* CSS */
+            .button-1 {
+              background-color: #03798e;
+              border-radius: 8px;
+              border-style: none;
+              box-sizing: border-box;
+              color: #d9d9d9;
+              cursor: pointer;
+              display: inline-block;
+              font-family:
+                "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+                sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              height: 40px;
+              line-height: 20px;
+              list-style: none;
+              margin: 0;
+              outline: none;
+              padding: 10px 16px;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              transition: color 100ms;
+              vertical-align: baseline;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+            }
+
+            .button-1:hover,
+            .button-1:focus {
+              background-color: #ffa132;
+            }
+          </style>
+        </section>
+
+        <div class="content-wrapper">
+          <div class="container">
+            <section class="contact-details" id="contact-details-section">
+              <div class="row text-center text-md-left">
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Contact Us</h5>
+                  <div class="pt-2">
+                    <a href="mailto:info@huddlestechnologies.online"
+                      ><p class="text-muted m-0">
+                        info@huddlestechnologies.online
+                      </p></a
+                    >
+                    <a href="tel:08103940242"
+                      ><p class="text-muted m-0">08103940242</p></a
+                    >
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Don't miss out</h5>
+                  <p class="text-muted">
+                    Want to stay in the loop with all the latest info? Just hit
+                    that subscribe button for our newsletter today!📧 Stay
+                    updated!
+                  </p>
+                  <form>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Email"
+                      placeholder="Email Address"
+                    />
+                  </form>
+                  <div class="pt-3">
+                    <button class="btn btn-dark">Subscribe</button>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Useful Links</h5>
+                  <a href="about.html"><p class="m-0 pt-1 pb-2">About</p></a>
+                  <a href="services.html"><p class="m-0 pb-2">Services</p></a>
+                  <a href="projects.html"
+                    ><p class="m-0 pt-1 pb-2">Projects</p></a
+                  >
+                  <a href="survey.html"><p class="m-0 pt-1">Survey</p></a>
+                  <a href="blog.html"><p class="m-0 pt-1">Blog</p></a>
+                  <a href="courses.html"><p class="m-0 pt-1">Courses</p></a>
+                  <a href="career.html"><p class="m-0 pt-1">Career</p></a>
+                  <a href="privacy.html"
+                    ><p class="m-0 pt-1">Privacy Policy</p></a
+                  >
+                  <a href="privacymgt.html"
+                    ><p class="m-0 pt-1">Privacy Management</p></a
+                  >
+                  <a href="legalguide.html"
+                    ><p class="m-0 pt-1">Legal Guidelines</p></a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 grid-margin">
+                  <h5 class="pb-2">Our address</h5>
+                  <p class="text-muted">
+                    At the moment, we do not have a physical office space. We're
+                    currently operating remotely.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <a href="https://wa.me/message/TVWBMAG3BNWDH1"
+                      ><span class="mdi mdi-whatsapp"></span
+                    ></a>
+                    <a href="https://x.com/huddlestech?s=21"
+                      ><span class="mdi mdi-twitter"></span
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/huddles.technologies?igsh=aTY1eXlwOTM2aTB6&utm_source=qr"
+                      ><span class="mdi mdi-instagram"></span
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/huddlestechnologies"
+                      ><span class="mdi mdi-linkedin"></span
+                    ></a>
+                    <a href="https:github.com/HuddlesTechnologies"
+                      ><span class="mdi mdi-github-circle"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="border-top">
+              <p class="text-center text-muted pt-4">
+                Copyright ©2023-2026
+                <b>Huddles Technologies, </b> a trademark of
+                <b>Huddles Technologies Ltd.</b> All rights reserved.<br /><a
+                  href="privacymgt.html"
+                  style="color: #4b4949"
+                  >Privacy Management</a
+                >
+                |
+                <a href="privacy.html" style="color: #4b4949"
+                  >Privacy Policies</a
+                >
+                |
+                <a href="legalguide.html" style="color: #4b4949"
+                  >Legal Guidelines</a
+                >
+              </p>
+            </footer>
+
+            <!---JS section-->
+            <script src="vendors/jquery/jquery.min.js"></script>
+            <script src="vendors/bootstrap/bootstrap.min.js"></script>
+            <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+            <script src="vendors/aos/js/aos.js"></script>
+            <script src="js/landingpage.js"></script>
+            <button id="back-to-top" title="Back to top">&#8679;</button>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const backBtn = document.getElementById("back-to-top");
+                window.addEventListener("scroll", () => {
+                  if (window.scrollY > 300) backBtn.classList.add("show");
+                  else backBtn.classList.remove("show");
+                });
+                backBtn.addEventListener("click", () => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
